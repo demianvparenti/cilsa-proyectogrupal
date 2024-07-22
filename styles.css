@@ -1,0 +1,10 @@
+.carousel{
+    height: 40%;
+    width: 40%;
+    margin: 0 auto;
+    position: relative;
+}
+.c-img{
+    height: 100%;
+    object-fit: contain;
+}
