@@ -1,10 +1,12 @@
 .carousel{
-    height: 40%;
-    width: 40%;
+    height: 950px;
+    width: 950px;
     margin: 0 auto;
-    position: relative;
 }
 .c-img{
     height: 100%;
-    object-fit: contain;
+    object-fit: fill;
+}
+.card{
+    margin: 0 auto;
 }
