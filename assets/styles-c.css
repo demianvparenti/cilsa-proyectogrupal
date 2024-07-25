@@ -1,17 +1,3 @@
-.carousel{
-    height: 950px;
-    width: 950px;
-    margin: 0 auto;
-}
-.c-img{
-    height: 100%;
-    object-fit: fill;
-}
-.card{
-    margin: 0 auto;
-}
-
-
 header{
     background: url(img/header.jpg);
     background-size: cover;
