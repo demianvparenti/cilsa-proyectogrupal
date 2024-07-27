@@ -11958,3 +11958,23 @@ textarea.form-control-lg {
     display: none !important;
   }
 }/*# sourceMappingURL=styles.css.map */
+
+
+.card {
+  max-width: 100% !important; 
+  width: 300px !important; 
+}
+.card-body {
+  text-align: center !important; 
+}
+
+.carousel {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+.carousel-item img {
+  width: 100% !important;
+  height: 400px !important; 
+  object-fit: cover !important; 
+}
