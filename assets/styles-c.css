@@ -1,4 +1,17 @@
-header{
+/*ESTILOS GENERALES*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/* header{
     background: url(img/header.jpg);
     background-size: cover;
     background-position:center;
@@ -7,7 +20,6 @@ header{
 header h1{
     text-align: center;
     font-size: 35px;
-    /* background-color: #000; */
     color: #fff;
     padding: 30px 0;
 }
@@ -17,17 +29,18 @@ header h1{
     margin: auto;
     display: flex;
     justify-content: space-between;
-    /* oculto lo que queda fuera del .contenedor */
+
     contain: paint;
-}
+} */
 /* SECCION CONTENEDOR DE ITEMS */
+
+/* 
 .contenedor .contenedor-items{
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-gap:30px;
     grid-row-gap: 30px;
-    /* width: 60%; */
     width: 100%;
     transition: .3s;
 }
@@ -69,3 +82,4 @@ header h1{
     border-radius: 5px;
     cursor: pointer;
 }
+ */

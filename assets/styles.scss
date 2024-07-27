@@ -1,0 +1,49 @@
+/*ESTILOS GENERALES*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+.navbar{
+    background-color: #0000007a;
+}
+
+.nav-item a{
+    font-size: 1.6rem;
+}
+
+.carousel{
+    width: 100% !important;
+    height: auto;
+}
+
+.carousel-caption{
+    padding-bottom: 0 !important;
+}
+
+.carousel img{
+    object-fit:contain;
+    width: 100%;
+    height: auto;
+}
+
+.card{
+    margin: 0 auto;
+}
+
+#carouselExampleCaptions{
+    width: 100%;
+}
