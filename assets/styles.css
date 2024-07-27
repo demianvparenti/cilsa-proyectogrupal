@@ -11970,7 +11970,9 @@ textarea.form-control-lg {
 
 .carousel {
   max-width: 100% !important;
+  height: 400px !important;
   overflow-x: hidden !important;
+
 }
 
 .carousel-item img {
