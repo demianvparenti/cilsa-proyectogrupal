@@ -1,4 +1,6 @@
-/*ESTILOS GENERALES*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/*--------------[ ESTILOS GENERALES ]-------------*/
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -10,46 +12,245 @@ html {
     box-sizing: inherit;
 }
 
-header{
+body{
+    background-color: #4d4d4d;
+}
+
+header {
     position: relative;
     width: 100%;
     height: auto;
     padding: 0;
 }
 
-.navbar{
-    background-color: #ffffffa1;
+/*--------------[ NAVBAR ]-------------*/
+.navbar {
+    background-color: #000000a1;
+    
 }
 
-.nav-item a{
+.navbar-brand{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.navbar-brand img{
+    margin-top: .5rem;
+    height: 5rem;
+}
+
+.nav-item{
+    padding: 0 2rem;
+}
+
+.nav-link{
     font-size: 1.6rem;
+    color: #c2c2c2e6;
 }
 
-.carousel{
+.nav-link:hover{
+    color: #ffffff;
+}
+
+.dropdown-toggle{
+    color: #c2c2c2e6;
+    padding-left: 1rem;
+}
+
+.dropdown-toggle:hover{
+    color: #ffffff;
+}
+
+
+
+.nav-item .btn.show {
+    border: none;
+    color: #ffffff;
+}
+
+.dropdown-menu{
+    background-color: #000000a1;
+}
+
+.dropdown-menu a{
+    color: #c2c2c2;
+    font-size: 1.4rem;
+}
+
+
+/*--------------[ FOOTER ]-------------*/
+
+.footer{
+    height: 10rem;
+    font-size: 1.4rem;
+    align-items: center;
+}
+
+.footer p{
+    padding-top: 3rem;
+    color: white;
+}
+
+
+/*--------------[ HERO ]-------------*/
+
+.masthead {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background: linear-gradient(to bottom, #0000004d 0%, #000000b3 75%, #000 100%), url("/assets/img/bg-masthead.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.masthead h1,
+.masthead .h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.8rem;
+    background: linear-gradient(#ffffffe6, #ffffff00);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.masthead h2,
+.masthead .h2 {
+    padding-top: 1rem;
+    max-width: 20rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+@media (min-width: 768px) {
+
+    .masthead h1,
+    .masthead .h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .masthead {
+        height: 100vh;
+        padding: 0;
+    }
+
+    .masthead h1,
+    .masthead .h1 {
+        font-size: 6.5rem;
+        line-height: 6.5rem;
+        letter-spacing: 0.8rem;
+    }
+
+    .masthead h2,
+    .masthead .h2 {
+        padding-top: 1rem;
+        max-width: 30rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+}
+
+
+/*--------------[ CARRUSEL Y PROMOCIONES ]-------------*/
+.promociones{
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    background: linear-gradient(to top, #0000004d 0%, #000000b3 60%, #000 100%);
+}
+
+.carousel {
     width: 100% !important;
     height: auto;
+    box-shadow: 0 0.5rem 0.5rem 0 #00000041 !important;
 }
 
-.carousel-caption{
+.carousel-caption {
     padding-bottom: 0 !important;
 }
 
-.carousel img{
-    object-fit:contain;
-    width: 100%;
-    height: auto;
+
+/*--------------[ INFO BOTTOM PAGE HOME ]-------------*/
+
+.info-card{
+    background-color: #1b1b1bc7;
+    padding: 2rem;
 }
 
-.card{
-    margin: 0 auto;
+.info-card div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-#carouselExampleCaptions{
-    width: 100%;
+.info-card div i{
+    font-size: 4rem;
 }
+
+.info-card div h4{
+    margin: 0;
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+.info-card p{
+    font-size: 1.4rem;
+}
+
+.info-card a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: white;
+}
+
+
+/*BOTONES*/
+
+.masthead .btn{
+    width: 20rem;
+}
+
+.btn-dark {
+    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+    padding: 1.25rem 2rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    border: 0;
+}
+
+.btn-dark:hover{
+    background: #ae146b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .producto-imagen-pequena {
     width: 150px;
     height: 150px;
 }
+
+
+
