@@ -282,8 +282,8 @@ header {
 
 .card-item {
   padding: 2rem;
-  background-color: rgba(27, 27, 27, 0.7803921569);
-  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1019607843) !important;
+  background-color: rgba(46, 46, 46, 0.7803921569);
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1019607843) !important;
   color: white;
 }
 
@@ -300,4 +300,11 @@ header {
 .producto-imagen-pequena {
   width: 150px;
   height: 150px;
+}
+
+/*--------------[ ITEM ]-------------*/
+.page-section-item {
+  padding-top: 8rem;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3019607843) 0%, rgba(0, 0, 0, 0.7019607843) 60%, #000 100%);
+  min-height: 90vh;
 }/*# sourceMappingURL=styles.css.map */

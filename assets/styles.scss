@@ -302,8 +302,8 @@ header {
 
 .card-item{
     padding: 2rem;
-    background-color: #1b1b1bc7;
-    box-shadow: 0 0.1875rem 0.1875rem 0 #0000001a !important;
+    background-color: #2e2e2ec7;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #0000001a !important;
     color: white;
 }
 
@@ -320,4 +320,13 @@ header {
 .producto-imagen-pequena {
     width: 150px;
     height: 150px;
+}
+
+
+/*--------------[ ITEM ]-------------*/
+
+.page-section-item{
+    padding-top: 8rem;
+    background: linear-gradient(to bottom, #0000004d 0%, #000000b3 60%, #000 100%);
+    min-height: 90vh;
 }
