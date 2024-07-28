@@ -26,7 +26,6 @@ header {
 /*--------------[ NAVBAR ]-------------*/
 .navbar {
     background-color: #000000a1;
-    
 }
 
 .navbar-brand{
@@ -38,6 +37,7 @@ header {
 
 .navbar-brand img{
     margin-top: .5rem;
+    margin-bottom: .5rem;
     height: 5rem;
 }
 
@@ -212,7 +212,7 @@ header {
 }
 
 
-/*BOTONES*/
+/*--------------[ BOTONES ]-------------*/
 
 .masthead .btn{
     width: 20rem;
@@ -232,12 +232,38 @@ header {
 }
 
 
+/*--------------[ ABOUT US ]-------------*/
+
+.page-section-about{
+    padding-top: 10rem;
+    background: linear-gradient(to bottom, #0000004d 0%, #000000b3 60%, #000 100%);
+}
+
+.page-section-about .container{
+    margin-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.team-members{
+    padding-top: 5rem;
+    padding-bottom: 11rem;
+}
+
+.page-section-about p, li{
+    font-size: 1.4rem;
+}
+
+.botones i{
+    font-size: 2.5rem;
+    padding: .5rem;
+}
+
+.botones .btn{
+    padding: 1rem;
+}
 
 
-
-
-
-
+/*--------------[ CONTACT ]-------------*/
 
 
 

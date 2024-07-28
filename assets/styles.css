@@ -36,6 +36,7 @@ header {
 
 .navbar-brand img {
   margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   height: 5rem;
 }
 
@@ -195,7 +196,7 @@ header {
   color: white;
 }
 
-/*BOTONES*/
+/*--------------[ BOTONES ]-------------*/
 .masthead .btn {
   width: 20rem;
 }
@@ -213,6 +214,36 @@ header {
   background: #ae146b;
 }
 
+/*--------------[ ABOUT US ]-------------*/
+.page-section-about {
+  padding-top: 10rem;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3019607843) 0%, rgba(0, 0, 0, 0.7019607843) 60%, #000 100%);
+}
+
+.page-section-about .container {
+  margin-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.team-members {
+  padding-top: 5rem;
+  padding-bottom: 11rem;
+}
+
+.page-section-about p, li {
+  font-size: 1.4rem;
+}
+
+.botones i {
+  font-size: 2.5rem;
+  padding: 0.5rem;
+}
+
+.botones .btn {
+  padding: 1rem;
+}
+
+/*--------------[ CONTACT ]-------------*/
 .producto-imagen-pequena {
   width: 150px;
   height: 150px;
