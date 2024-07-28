@@ -219,7 +219,7 @@ header {
 }
 
 .btn-dark {
-    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 0.1875rem 0.1875rem 0 #0000001a !important;
     padding: 1.25rem 2rem;
     font-size: 1.6rem;
     text-transform: uppercase;
@@ -285,10 +285,38 @@ header {
     padding-bottom: 1rem;
 }
 
+/*--------------[ PRODUCTS ]-------------*/
+
+.list-group-item{
+    background-color: #1b1b1bc7;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.page-section-store{
+    min-height: 88.5vh;
+    padding-top: 8rem;
+    background: linear-gradient(to bottom, #0000004d 0%, #000000b3 60%, #000 100%);
+}
+
+.card-item{
+    padding: 2rem;
+    background-color: #1b1b1bc7;
+    box-shadow: 0 0.1875rem 0.1875rem 0 #0000001a !important;
+    color: white;
+}
+
+.card-item a{
+    text-decoration: none;
+    color: #c2c2c2e6;
+    font-size: 1.6rem;
+}
+
+.card-item a:hover{
+    color: white;
+}
+
 .producto-imagen-pequena {
     width: 150px;
     height: 150px;
 }
-
-
-

@@ -1,0 +1,58 @@
+[
+    {
+        "nombre": "Auriculares Jabra EVOLVE 20 MS",
+        "descripcion": "Cuenta con Tecnología True Wireless.\nAlcance inalámbrico de 30 m.\nModo manos libres incluido.\nCon cancelación de ruido.\nMicrófono flexible incorporado.\nResistentes al agua.\nLargo de cable: 1.2m.\nTamaño del altavoz: 28mm",
+        "stock": 10,
+        "precio": 95000,
+        "imagen": "assets/img/products/auriculares.jpg",
+        "categoria": "accesorios"
+    },
+    {
+        "nombre": "Fuente de alimentación Gigabyte P850GM",
+        "descripcion": "80 PLUS Gold certified.\nFully modular design.\n120mm Smart Hydraulic Bearing (HYB) Fan.\nMain Japanese capacitors.\nPowerful single +12V rail.\nOVP/OPP/SCP/UVP/OCP/OTP protection.\nCompact size",
+        "stock": 10,
+        "precio": 120000,
+        "imagen": "assets/img/products/gigabyte.jpg",
+        "categoria": "componentes"
+    },
+    {
+        "nombre": "Motherboard MSI Gaming Plus Max B450",
+        "descripcion": "Complaciendo a los gamers con lo que realmente necesitan, B450 GAMING PLUS MAX está equipada con Core Boost, Turbo M.2, DDR4 Boost y conector USB 3.2 Gen2.\nSoporta procesadores Desktop 1ra, 2da y  3ra Gen AMD Ryzen™ / Ryzen™ con gráficos Radeon™ Vega y 2da Gen AMD Ryzen™ con gráficos Radeon™ / Athlon™ con gráficos Radeon™ Vega para Socket AM4.\nSoporta memoria DDR4 hasta 4133(OC) MHz.\nJuego ultrarrápido: TURBO M.2, AMD Turbo USB 3.2 GEN2, tecnología StoreMI.\nCore Boost: Con distribución premium y diseño energético totalmente digital, soporta más núcleos y ofrece mejor desempeño.\nDDR4 Boost: Tecnología avanzada que envía señales de datos puras para el mejor desempeño y estabilidad en juegos.\nAudio Boost: Gratifica tus oídos con el sonido con calidad de estudio para la experiencia de juego más inmersiva.\nBotón Flash BIOS : Permite usar simplemente una llave USB para flashear cualquier BIOS en segundos, sin instalar CPU, memoria ni tarjeta gráfica",
+        "stock": 10,
+        "precio": 140000,
+        "imagen": "assets/img/products/msi.png",
+        "categoria": "componentes"
+    },
+    {
+        "nombre": "PC Armada Gamer",
+        "descripcion": "Micro AMD Ryzen 7 5700G 3.8GH.\nVideo AMD Radeon Vega integrado.\nMother A520M-K.\nDisco Solido SSD 960GB.\nRAM: 32GB DDR4.\nGabinete Gamer RGB.\nFuente 650W 80 Plus.\nAdaptador de WiFi.",
+        "stock": 5,
+        "precio": 1099999,
+        "imagen": "assets/img/products/pcarmadagamer.webp",
+        "categoria": "pc-armadas"
+    },
+    {
+        "nombre": "PC Armada de Hogar y Oficina",
+        "descripcion": "Disco SSD Patriot Burst Elite 120gb 2.5.\nMotherboard Asus Prime J4005i-c Con Procesador Celeron Dual Core Ddr4.\nMemoria Ram Pny Udim 8GB Ddr4 3200 Cl16.\nGabinete Kit Compucase 2206 C/Fuente 500w Teclado Mouse y Parlantes.",
+        "stock": 5,
+        "precio": 550000,
+        "imagen": "assets/img/products/pcarmadaofi.png",
+        "categoria": "pc-armadas"
+    },
+    {
+        "nombre": "Microprocesador AMD Ryzen 5 3600",
+        "descripcion": "Boxed Processor.\nMemoria DDR4.\n2 canales de memoria.\nArriba de 3200MHz velocidad de memoria.\nPCIe 4.0.\nNúcleos de CPU: 6.\nHilos: 12.\nFrecuencia base: 3.6GHz.\nFrecuencia máxima: 4.2GHz.\nCaché L3: 32MB.\nTDP: 65W.\nDesbloqueado: Sí.\nCMOS: TSMC 7nm FinFET.\nSocket: AM4.\nVersión de PCI Express: PCIe 4.0.\nSolución térmica: Wraith Stealth.\nTamaño de matriz: 7nm.\nPaquete: AM4.",
+        "stock": 10,
+        "precio": 170000,
+        "imagen": "assets/img/products/ryzen.jpg",
+        "categoria": "componentes"
+    },
+    {
+        "nombre": "Combo Teclado y Mouse Logitech K120",
+        "descripcion": "Teclado y mouse con cable.\nTECLADO:\nDiseño resistente a derrames.\nContiene teclado numérico.\nTecla cilíndrica.\nMedidas: 450mm ancho, 155mm alto y 23.5mm profundidad.\nMOUSE:\nUtiliza cable.\nSensor óptico y rueda de desplazamiento.\nResolución de 1000dpi.",
+        "stock": 10,
+        "precio": 13000,
+        "imagen": "assets/img/products/teclado_k120.jpg",
+        "categoria": "accesorios"
+    }
+]
