@@ -239,6 +239,7 @@ function actualizarTitulo(categoria) {
 
         if (isValid) {
             showModal('successModal', 'Formulario enviado correctamente. ¡Gracias por contactarnos!');
+            document.getElementById('contactForm').reset();
         } else {
             showModal('errorModal', errorMessages.join('<br>'));
         }
