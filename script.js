@@ -70,19 +70,20 @@ function mostrarProducto(producto) {
     productoElement.classList.add('producto-item');
 
     productoElement.innerHTML = `
-        <div class="row text-start w-100">
-            <div class="col-6">
-                <img src="${producto.imagen}" alt="${producto.nombre}" class="img-fluid mx-auto d-block">
+        <div class="row text-center w-100">
+            <div class="col-md-6 col-12">
+                <img src="${producto.imagen}" alt="${producto.nombre}" class="producto-imagen-mediana mx-auto d-block">
             </div>
-            <div class="col-6">
+            <div class="col-md-6 col-12 py-5">
                 <div class="row">
                     <h2 class="p-3">${producto.nombre}</h2>
-                    <p id="producto-descripcion">${producto.descripcion}</p>
+                    
                 </div>
-                <div class="row">
-                    <p>Precio: $${producto.precio.toFixed(2)}</p>
-                    <p>Stock: ${producto.stock} unidades</p>
-                </div>
+            </div>
+            <div class="col-12 pt-3">
+                <p id="producto-descripcion">${producto.descripcion}</p>
+                <p>Precio: $${producto.precio.toFixed(2)}</p>
+                <p>Stock: ${producto.stock} unidades</p>
             </div>
         </div>
     `;
@@ -140,10 +141,10 @@ function agregarEventosCategorias() {
 
 function actualizarTitulo(categoria) {
     const tituloElemento = document.getElementById('title-products');
-    
+
     if (tituloElemento) {
         let textoTitulo = 'Productos';
-        
+
         switch (categoria) {
             case 'componentes':
                 textoTitulo = 'Arma tu PC';
@@ -161,7 +162,7 @@ function actualizarTitulo(categoria) {
                 textoTitulo = 'Productos';
                 break;
         }
-        
+
         tituloElemento.textContent = textoTitulo;
     } else {
         console.error('Elemento del título no encontrado');
@@ -170,83 +171,83 @@ function actualizarTitulo(categoria) {
 
 
 
-// Formulario Contacto
-const form = document.getElementById('contactForm');
-form.addEventListener('submit', handleSubmit);
+    // Formulario Contacto
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', handleSubmit);
 
-const errorModal = new bootstrap.Modal(document.getElementById('errorModal'));
-const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+    const errorModal = new bootstrap.Modal(document.getElementById('errorModal'));
+    const successModal = new bootstrap.Modal(document.getElementById('successModal'));
 
-const phoneInput = document.getElementById('phone');
-            phoneInput.addEventListener('input', (event) => {
-                event.target.value = event.target.value.replace(/[^0-9+\-\s()]/g, '');
-            });
+    const phoneInput = document.getElementById('phone');
+    phoneInput.addEventListener('input', (event) => {
+        event.target.value = event.target.value.replace(/[^0-9+\-\s()]/g, '');
+    });
 
-function handleSubmit(event) {
-    event.preventDefault();
+    function handleSubmit(event) {
+        event.preventDefault();
 
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const phone = document.getElementById('phone').value.trim();
-    const message = document.getElementById('message').value.trim();
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const message = document.getElementById('message').value.trim();
 
-    let isValid = true;
-    let errorMessages = [];
-    document.querySelectorAll('.invalid-feedback').forEach(el => el.style.display = 'none');
+        let isValid = true;
+        let errorMessages = [];
+        document.querySelectorAll('.invalid-feedback').forEach(el => el.style.display = 'none');
 
-    if (!name) {
-        document.getElementById('name-error').style.display = 'block';
-        errorMessages.push('El nombre es obligatorio.');
-        isValid = false;
-    } else if (name.length < 3) {
-        document.getElementById('name-error').style.display = 'block';
-        errorMessages.push('El nombre debe tener al menos 3 caracteres.');
-        isValid = false;
+        if (!name) {
+            document.getElementById('name-error').style.display = 'block';
+            errorMessages.push('El nombre es obligatorio.');
+            isValid = false;
+        } else if (name.length < 3) {
+            document.getElementById('name-error').style.display = 'block';
+            errorMessages.push('El nombre debe tener al menos 3 caracteres.');
+            isValid = false;
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!email) {
+            document.getElementById('email-error').style.display = 'block';
+            errorMessages.push('El email es obligatorio.');
+            isValid = false;
+        } else if (!emailRegex.test(email)) {
+            document.getElementById('email-error').style.display = 'block';
+            errorMessages.push('El email no es válido.');
+            isValid = false;
+        }
+
+        const phoneRegex = /^[\d\s\+\-\(\)]+$/;
+        if (!phone) {
+            document.getElementById('phone-error').style.display = 'block';
+            errorMessages.push('El teléfono es obligatorio.');
+            isValid = false;
+        } else if (!phoneRegex.test(phone)) {
+            document.getElementById('phone-error').style.display = 'block';
+            errorMessages.push('El teléfono contiene caracteres no válidos.');
+            isValid = false;
+        }
+
+        if (!message) {
+            document.getElementById('message-error').style.display = 'block';
+            errorMessages.push('El mensaje es obligatorio.');
+            isValid = false;
+        } else if (message.length < 10) {
+            document.getElementById('message-error').style.display = 'block';
+            errorMessages.push('El mensaje debe tener al menos 10 caracteres.');
+            isValid = false;
+        }
+
+        if (isValid) {
+            showModal('successModal', 'Formulario enviado correctamente. ¡Gracias por contactarnos!');
+        } else {
+            showModal('errorModal', errorMessages.join('<br>'));
+        }
     }
 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!email) {
-        document.getElementById('email-error').style.display = 'block';
-        errorMessages.push('El email es obligatorio.');
-        isValid = false;
-    } else if (!emailRegex.test(email)) {
-        document.getElementById('email-error').style.display = 'block';
-        errorMessages.push('El email no es válido.');
-        isValid = false;
-    }
-
-    const phoneRegex = /^[\d\s\+\-\(\)]+$/;
-    if (!phone) {
-        document.getElementById('phone-error').style.display = 'block';
-        errorMessages.push('El teléfono es obligatorio.');
-        isValid = false;
-    } else if (!phoneRegex.test(phone)) {
-        document.getElementById('phone-error').style.display = 'block';
-        errorMessages.push('El teléfono contiene caracteres no válidos.');
-        isValid = false;
-    }
-
-    if (!message) {
-        document.getElementById('message-error').style.display = 'block';
-        errorMessages.push('El mensaje es obligatorio.');
-        isValid = false;
-    } else if (message.length < 10) {
-        document.getElementById('message-error').style.display = 'block';
-        errorMessages.push('El mensaje debe tener al menos 10 caracteres.');
-        isValid = false;
-    }
-
-    if (isValid) {
-        showModal('successModal', 'Formulario enviado correctamente. ¡Gracias por contactarnos!');
-    } else {
-        showModal('errorModal', errorMessages.join('<br>'));
-    }
-}
-
-function showModal(modalId, message) {
-    const modalBody = document.getElementById(modalId + 'Body');
-    modalBody.innerHTML = message;
-    const modal = new bootstrap.Modal(document.getElementById(modalId));
-    modal.show();
+    function showModal(modalId, message) {
+        const modalBody = document.getElementById(modalId + 'Body');
+        modalBody.innerHTML = message;
+        const modal = new bootstrap.Modal(document.getElementById(modalId));
+        modal.show();
     }
 }

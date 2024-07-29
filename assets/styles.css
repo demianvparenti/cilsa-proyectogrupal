@@ -272,6 +272,15 @@ header {
   background-color: rgba(27, 27, 27, 0.7803921569);
   color: white;
   font-size: 1.4rem;
+  border: none;
+}
+
+.list-group-item:hover {
+  background-color: #ae146b;
+}
+
+.list-group-item:active {
+  background-color: #ae146b;
 }
 
 .page-section-store {
@@ -304,7 +313,16 @@ header {
 
 /*--------------[ ITEM ]-------------*/
 .page-section-item {
-  padding-top: 8rem;
+  padding-top: 15rem;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3019607843) 0%, rgba(0, 0, 0, 0.7019607843) 60%, #000 100%);
   min-height: 90vh;
+}
+
+.page-section-item .container {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.3019607843) 0%, rgba(0, 0, 0, 0.7019607843) 60%, #000 100%);
+  width: 80%;
+}
+
+.producto-imagen-mediana {
+  width: 60%;
 }/*# sourceMappingURL=styles.css.map */

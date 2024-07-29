@@ -292,6 +292,15 @@ header {
     background-color: #1b1b1bc7;
     color: white;
     font-size: 1.4rem;
+    border: none;
+}
+
+.list-group-item:hover{
+    background-color: #ae146b;
+}
+
+.list-group-item:active{
+    background-color: #ae146b;
 }
 
 .page-section-store{
@@ -326,7 +335,17 @@ header {
 /*--------------[ ITEM ]-------------*/
 
 .page-section-item{
-    padding-top: 8rem;
+    padding-top: 15rem;
     background: linear-gradient(to bottom, #0000004d 0%, #000000b3 60%, #000 100%);
     min-height: 90vh;
+}
+
+.page-section-item .container{
+    background: linear-gradient(to top, #0000004d 0%, #000000b3 60%, #000 100%);
+    width: 80%;
+}
+
+
+.producto-imagen-mediana{
+    width: 60%;
 }
