@@ -5,7 +5,7 @@
         "descripcion": "Cuenta con Tecnología True Wireless.\nAlcance inalámbrico de 30 m.\nModo manos libres incluido.\nCon cancelación de ruido.\nMicrófono flexible incorporado.\nResistentes al agua.\nLargo de cable: 1.2m.\nTamaño del altavoz: 28mm",
         "stock": 10,
         "precio": 95000,
-        "imagen": "assets/img/products/auriculares.jpg",
+        "imagen": "assets/img/products/auriculares.png",
         "categoria": "accesorios"
     },
     {
@@ -14,7 +14,7 @@
         "descripcion": "80 PLUS Gold certified.\nFully modular design.\n120mm Smart Hydraulic Bearing (HYB) Fan.\nMain Japanese capacitors.\nPowerful single +12V rail.\nOVP/OPP/SCP/UVP/OCP/OTP protection.\nCompact size",
         "stock": 10,
         "precio": 120000,
-        "imagen": "assets/img/products/gigabyte.jpg",
+        "imagen": "assets/img/products/gigabyte.png",
         "categoria": "componentes"
     },
     {
@@ -32,7 +32,7 @@
         "descripcion": "Micro AMD Ryzen 7 5700G 3.8GH.\nVideo AMD Radeon Vega integrado.\nMother A520M-K.\nDisco Solido SSD 960GB.\nRAM: 32GB DDR4.\nGabinete Gamer RGB.\nFuente 650W 80 Plus.\nAdaptador de WiFi.",
         "stock": 5,
         "precio": 1099999,
-        "imagen": "assets/img/products/pcarmadagamer.webp",
+        "imagen": "assets/img/products/pcarmadagamer.png",
         "categoria": "pc-armadas"
     },
     {
@@ -50,7 +50,7 @@
         "descripcion": "Boxed Processor.\nMemoria DDR4.\n2 canales de memoria.\nArriba de 3200MHz velocidad de memoria.\nPCIe 4.0.\nNúcleos de CPU: 6.\nHilos: 12.\nFrecuencia base: 3.6GHz.\nFrecuencia máxima: 4.2GHz.\nCaché L3: 32MB.\nTDP: 65W.\nDesbloqueado: Sí.\nCMOS: TSMC 7nm FinFET.\nSocket: AM4.\nVersión de PCI Express: PCIe 4.0.\nSolución térmica: Wraith Stealth.\nTamaño de matriz: 7nm.\nPaquete: AM4.",
         "stock": 10,
         "precio": 170000,
-        "imagen": "assets/img/products/ryzen.jpg",
+        "imagen": "assets/img/products/ryzen.png",
         "categoria": "componentes"
     },
     {
@@ -59,7 +59,7 @@
         "descripcion": "Teclado y mouse con cable.\nTECLADO:\nDiseño resistente a derrames.\nContiene teclado numérico.\nTecla cilíndrica.\nMedidas: 450mm ancho, 155mm alto y 23.5mm profundidad.\nMOUSE:\nUtiliza cable.\nSensor óptico y rueda de desplazamiento.\nResolución de 1000dpi.",
         "stock": 10,
         "precio": 13000,
-        "imagen": "assets/img/products/teclado_k120.jpg",
+        "imagen": "assets/img/products/teclado_k120.png",
         "categoria": "accesorios"
     }
 ]
